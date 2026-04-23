@@ -19,7 +19,7 @@ class CalculadoraController extends Controller
         if($op == 'soma') $resultado = $n1 + $n2;
         elseif($op == 'subtracao') $resultado = $n1 - $n2;
         elseif($op == 'multiplicacao') $resultado = $n1 * $n2;
-        elseif($op == 'divisao') $resultado = $n2 != 0 ? $n1 / $n2 : 'Erro (divisão por zero)';
+        elseif($op == 'divisao') $resultado = $n2 != 0 ? $n1 / $n2 : 'Erro (divisão por zero não pode ser realizada)';
 
         return view('calculadora', ['resultado' => $resultado]);
     }
