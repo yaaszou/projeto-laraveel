@@ -1,0 +1,17 @@
+[2026-04-23 13:17:01] local.ERROR: Command "server" is not defined.
+
+Did you mean one of these?
+    make:observer
+    serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"server\" is not defined.
+
+Did you mean one of these?
+    make:observer
+    serve at /home/renato/calculadora/vendor/symfony/console/Application.php:749)
+[stacktrace]
+#0 /home/renato/calculadora/vendor/symfony/console/Application.php(298): Symfony\\Component\\Console\\Application->find()
+#1 /home/renato/calculadora/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/renato/calculadora/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run()
+#3 /home/renato/calculadora/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle()
+#4 /home/renato/calculadora/artisan(16): Illuminate\\Foundation\\Application->handleCommand()
+#5 {main}
+"} 
